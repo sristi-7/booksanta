@@ -182,7 +182,7 @@ export default class WelcomeScreen extends React.Component {
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((response) => {
-        return Alert.alert("userLoggedInSuccesfully");
+        this.props.navigation.navigate("BookDonateScreen")
       })
       .catch((error) => {
         return Alert.alert(error.message);
