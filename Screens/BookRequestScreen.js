@@ -66,7 +66,7 @@ export default class BookRequestScreen extends React.Component {
         >
           <Text>submit</Text>
         </TouchableOpacity>
-      </View>
+      </View> 
     );
   }
 }
